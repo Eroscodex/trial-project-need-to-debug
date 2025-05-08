@@ -58,7 +58,7 @@ const Login = ({ setIsAuthenticated, setUser }) => {
       // Improved error handling
       if (error.response) {
         // The request was made and the server responded with a status code
-        setError(error.response.data?.message || 
+        setError(error.response.data.message || 
                 `Server error: ${error.response.status} ${error.response.statusText}`);
       } else if (error.request) {
         // The request was made but no response was received
